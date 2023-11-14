@@ -1,5 +1,6 @@
 # define your methods here.
 # ex1() - ex10()
+from src.WordCounter import WordCounter
 
 def ex1():
     people_list = [
@@ -70,3 +71,10 @@ def get_people(people):
     result = [p['name'] for p in people if p['age'] >= 15]
     return result
 
+def ex5():
+    sentence = "This is a test of the emergency broadcast system"
+    word_counter = WordCounter(sentence)
+    word_counter.count_words()
+    print(word_counter.get_word_count())    # Returns the number of all the words.
+    print(word_counter.get_shortest_word()) # Returns the length of the shortest word.
+    print(word_counter.get_longest_word())  # Returns the length of the longest word.
