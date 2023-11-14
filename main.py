@@ -1,10 +1,10 @@
 # Execute your methods here.
-from src import *
-# from assignments import *
+from src.assignments import *
 
 
 def main():
-    ex1()
+    # ex1()
+    ex2()
 
 
 if __name__ == '__main__':
