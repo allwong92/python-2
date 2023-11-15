@@ -1,11 +1,15 @@
 class TaxMan:
+
+    # Constructor
     def __init__(self, array, percent):
         self.array = array
         self.percent = percent
         self.__total = 0
 
-
+    # Methods
     def calc_total(self):
+
+        # Loop through each item in array
         for item in self.array:
             self.__total += item['price']
         
