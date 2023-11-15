@@ -7,6 +7,7 @@ from src.CarCollector import CarCollector
 from pprint import pprint
 from src.Dwarf import Dwarf
 from src.Fighter import Fighter
+from src.Invoice import Invoice
 
 def ex1():
     people_list = [
@@ -124,3 +125,20 @@ def ex9():
     d.fight(f)
     print(f)
     print(d)
+
+def ex10():
+    data = [
+    "1, 2322, 10.00, False",
+    "2, 5435, 60.30, True",
+    "3, 3433, 15.63, False",
+    "4, 8439, 12.77, False",
+    "5, 3424, 11.34, False",
+    ]
+    arr = []
+    for i in data:
+        print(i)
+        arr2 = i.split(", ")
+        invoice = Invoice(int(arr2[0]), int(arr2[1]), float(arr2[2]), str(arr2[3]))
+        arr.append(invoice)
+
+    print(arr)
