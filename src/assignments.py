@@ -5,6 +5,8 @@ from src.TaxMan import TaxMan
 from src.Calculator import Calculator
 from src.CarCollector import CarCollector
 from pprint import pprint
+from src.Dwarf import Dwarf
+from src.Fighter import Fighter
 
 def ex1():
     people_list = [
@@ -112,3 +114,13 @@ def ex7():
 
 def ex8():
     pprint(CarCollector.get_data())
+
+def ex9():
+    f = Fighter(18)
+    d = Dwarf(15)
+    print(f)
+    print(d)
+    f.fight(d)
+    d.fight(f)
+    print(f)
+    print(d)
