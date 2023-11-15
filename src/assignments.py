@@ -2,6 +2,7 @@
 # ex1() - ex10()
 from src.WordCounter import WordCounter
 from src.TaxMan import TaxMan
+from src.Calculator import Calculator
 
 def ex1():
     people_list = [
@@ -89,3 +90,20 @@ def ex6():
     tm = TaxMan(items, "10%")
     tm.calc_total()
     print(tm.get_total())
+
+def ex7():
+    calculator1 = Calculator(4, 3)
+    calculator1.add()
+    print(calculator1.get_result())
+
+    calculator2 = Calculator(4, 3)
+    calculator2.sub()
+    print(calculator2.get_result())
+
+    calculator3 = Calculator(2, 3)
+    calculator3.mul()
+    print(calculator3.get_result())
+
+    calculator4 = Calculator(8, 2)
+    calculator4.div()
+    print(calculator4.get_result())
