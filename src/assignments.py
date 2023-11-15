@@ -3,6 +3,8 @@
 from src.WordCounter import WordCounter
 from src.TaxMan import TaxMan
 from src.Calculator import Calculator
+from src.CarCollector import CarCollector
+from pprint import pprint
 
 def ex1():
     people_list = [
@@ -107,3 +109,6 @@ def ex7():
     calculator4 = Calculator(8, 2)
     calculator4.div()
     print(calculator4.get_result())
+
+def ex8():
+    pprint(CarCollector.get_data())
